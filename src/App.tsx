@@ -1,8 +1,11 @@
+import Container from "./components/container/Container";
+import Header from "./components/header/Header";
+
 function App() {
   return (
-    <div>
-      Test app
-    </div>
+    <Container>
+      <Header />
+    </Container>
   );
 }
 
