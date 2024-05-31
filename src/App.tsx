@@ -1,4 +1,5 @@
 import AboutUs from "./components/about-us/AboutUs";
+import Authors from "./components/authors/Authors";
 import Container from "./components/container/Container";
 import Header from "./components/header/Header";
 import MainButton from "./components/main-button/MainButton";
@@ -13,6 +14,7 @@ function App() {
         <MainButton />
       </Container>
       <AboutUs />
+      <Authors />
     </>
   );
 }
