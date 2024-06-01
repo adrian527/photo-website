@@ -4,6 +4,7 @@ import Container from "./components/container/Container";
 import Header from "./components/header/Header";
 import MainButton from "./components/main-button/MainButton";
 import MainImage from "./components/main-image/MainImage";
+import Opinions from "./components/opinions/Opinions";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       </Container>
       <AboutUs />
       <Authors />
+      <Opinions />
     </>
   );
 }
