@@ -3,47 +3,60 @@
 @tailwind utilities;
 
 @keyframes slide-up {
-    from {
-      transform: translateY(100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  border-top-color: #d97706; /* Change this color to your preferred color */
+  animation: spin 1s linear infinite;
+}
+
+@media (min-width: 1200px) {
+  .animate-slide-up {
+    animation: slide-up 0.5s ease-out forwards;
   }
 
-  @keyframes slide-right {
-    from {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
+  .animate-slide-right {
+    animation: slide-right 0.5s ease-out forwards;
   }
 
-  @keyframes slide-show {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+  .animate-slide-show {
+    animation: slide-show 1.2s ease-out forwards;
   }
-  
-  @media (min-width: 1200px) {
-    .animate-slide-up {
-        animation: slide-up 0.5s ease-out forwards;
-      }
-
-    .animate-slide-right {
-        animation: slide-right 0.5s ease-out forwards;
-    }
-
-    .animate-slide-show {
-        animation: slide-show 1.2s ease-out forwards;
-    }
-  }
-  
+}
