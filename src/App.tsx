@@ -9,7 +9,7 @@ import Opinions from "./components/opinions/Opinions";
 
 function App() {
   return (
-    <>
+    <div className="overflow-x-hidden">
       <Container>
         <Header />
         <MainImage />
@@ -19,7 +19,7 @@ function App() {
       <Authors />
       <Opinions />
       <Footer />
-    </>
+    </div>
   );
 }
 

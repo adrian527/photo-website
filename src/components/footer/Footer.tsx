@@ -9,12 +9,12 @@ const H2: React.FC<WithHeaderProps> = ({ className }) => (
 const HeaderElement = withHeader(H2);
 
 const Footer = () => (
-    <footer className="min-h-96 w-full pr-24 pt-16 pb-14">
+    <footer className="min-h-96 w-full pr-0 lg:pr-24 pt-16 pb-14">
         <div className="px-24 pb-6">
             <HeaderElement />
         </div>
         <div className="flex flex-wrap">
-            <div className="lg:w-3/5">
+            <div className="lg:w-3/5 mb-12 lg:mb-0">
                 <img className=" w-full h-full object-cover" src="https://picsum.photos/id/50/4608/3072" alt="Description" />
             </div>
             <div className="lg:w-2/5 pl-12">
