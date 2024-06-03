@@ -5,6 +5,7 @@ import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import MainButton from "./components/main-button/MainButton";
 import MainImage from "./components/main-image/MainImage";
+import Modal from "./components/modal/Modal";
 import Opinions from "./components/opinions/Opinions";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Authors />
       <Opinions />
       <Footer />
+      <Modal />
     </div>
   );
 }
